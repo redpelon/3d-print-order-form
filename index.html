@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Custom 3D Print Order Form</title>
+<style>
+body {font-family: Arial, sans-serif; margin: 40px;}
+form {max-width: 600px; margin: auto;}
+label {display: block; margin-top: 15px;}
+input, select, textarea {width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box;}
+button {margin-top: 20px; padding: 10px 20px;}
+</style>
+</head>
+<body>
+<h1>Order Your Custom 3D Print</h1>
+<form action="https://formsubmit.co/redpelon@gmail.com" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="_next" value="https://github.com/redpelon/3d-print-order-form"/>
+<input type="hidden" name="_captcha" value="false">
+<label for="name">Name*</label>
+<input type="text" id="name" name="name" required>
+<label for="email">Email*</label>
+<input type="email" id="email" name="email" required>
+<label for="description">What would you like printed?*</label>
+<textarea id="description" name="description" required></textarea>
+<label for="color">Color choices</label>
+<input type="text" id="color" name="color">
+<label for="reference">Upload reference image</label>
+<input type="file" id="reference" name="reference">
+<label for="size">Expected size (e.g., dimensions)</label>
+<input type="text" id="size" name="size">
+<label for="deadline">Deadline</label>
+<input type="date" id="deadline" name="deadline">
+<label for="budget">Budget / Cost expectation</label>
+<input type="text" id="budget" name="budget">
+<label for="notes">Additional notes</label>
+<textarea id="notes" name="notes"></textarea>
+<button type="submit">Submit Order</button>
+</form>
+</body>
+</html>
